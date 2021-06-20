@@ -17,6 +17,8 @@ struct AwardsView: View {
                     CurvesView(width: 250, height: 250)
                     HeartView(width: 200, height: 200)
                         .frame(width: UIScreen.main.bounds.width)
+                    MedalView(width: 200, height: 200)
+                        .frame(width: UIScreen.main.bounds.width)
                 }
             }
             .navigationBarTitle("Awards")

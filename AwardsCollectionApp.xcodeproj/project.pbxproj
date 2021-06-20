@@ -17,6 +17,7 @@
 		A8E1B483267B7972005E98AA /* GradientRectangles.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E1B482267B7972005E98AA /* GradientRectangles.swift */; };
 		A8E1B485267B7979005E98AA /* PathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E1B484267B7978005E98AA /* PathView.swift */; };
 		B39E4E97267DF66B000743AD /* HeartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39E4E96267DF66B000743AD /* HeartView.swift */; };
+		B3D6F90C267F93B500F7FDD4 /* MedalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D6F90B267F93B500F7FDD4 /* MedalView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		A8E1B482267B7972005E98AA /* GradientRectangles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientRectangles.swift; sourceTree = "<group>"; };
 		A8E1B484267B7978005E98AA /* PathView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathView.swift; sourceTree = "<group>"; };
 		B39E4E96267DF66B000743AD /* HeartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartView.swift; sourceTree = "<group>"; };
+		B3D6F90B267F93B500F7FDD4 /* MedalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				A89D0939267B76D600C1FB66 /* Info.plist */,
 				A89D0936267B76D600C1FB66 /* Preview Content */,
 				B39E4E96267DF66B000743AD /* HeartView.swift */,
+				B3D6F90B267F93B500F7FDD4 /* MedalView.swift */,
 			);
 			path = AwardsCollectionApp;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8E1B481267B7967005E98AA /* CurvesView.swift in Sources */,
+				B3D6F90C267F93B500F7FDD4 /* MedalView.swift in Sources */,
 				B39E4E97267DF66B000743AD /* HeartView.swift in Sources */,
 				A89D0942267B77C800C1FB66 /* AwardsView.swift in Sources */,
 				A89D0933267B76D400C1FB66 /* MainView.swift in Sources */,
