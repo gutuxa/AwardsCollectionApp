@@ -25,7 +25,7 @@ struct MainView: View {
             Spacer()
             if showAward {
                 HeartView(width: 250, height: 250)
-                    .transition(.transition)
+                    .transition(.heartbeat)
             }
             Spacer()
         }
@@ -42,9 +42,16 @@ struct MainView: View {
 }
 
 extension AnyTransition {
-    static var transition: AnyTransition {
-        let insertion = AnyTransition.move(edge: .leading)
+    static var heartbeat: AnyTransition {
+        let insertion = AnyTransition.opacity
             .combined(with: .scale)
+            .animation(
+                .interpolatingSpring(
+                    mass: 0.3,
+                    stiffness: 13,
+                    damping: 2
+                )
+            )
         
         let removal = AnyTransition.scale
             .combined(with: .opacity)
