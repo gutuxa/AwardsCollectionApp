@@ -252,9 +252,9 @@ struct MedalView: View {
             ZStack {
                 Path { path in
                     path.move(to: CGPoint(x: middleX * 1.35, y: middleY))
-                    path.addLine(to: CGPoint(x: middleX * 1.35, y: middleY * 1.9))
-                    path.addLine(to: CGPoint(x: middleX, y: middleY * 1.75))
-                    path.addLine(to: CGPoint(x: middleX * 0.65, y: middleY * 1.9))
+                    path.addLine(to: CGPoint(x: middleX * 1.35, y: middleY * 1.8))
+                    path.addLine(to: CGPoint(x: middleX, y: middleY * 1.65))
+                    path.addLine(to: CGPoint(x: middleX * 0.65, y: middleY * 1.8))
                     path.addLine(to: CGPoint(x: middleX * 0.65, y: middleY))
                 }
                 .fill(Color.yellow)
@@ -265,13 +265,12 @@ struct MedalView: View {
                 Circle()
                     .stroke(lineWidth: 10)
                     .foregroundColor(.white)
-                    .frame(width: curveRadius * 1.1, height: curveRadius * 1.1)
+                    .frame(width: curveRadius * 1.15, height: curveRadius * 1.15)
                     .offset(CGSize(width: 0, height: -middleY + curveMiddle.y))
             }
             
         }
         .frame(width: width, height: height)
-//        .background(Color.red)
     }
     
     private func getPoint(middle: CGPoint, radius: CGFloat, degree: CGFloat) -> CGPoint {

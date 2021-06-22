@@ -8,20 +8,22 @@
 import SwiftUI
 
 struct AwardsView: View {
+    let awards = Award.getAwards()
+    var activeAwards: [Award] {
+        awards.filter { $0.active }
+    }
+    
     var body: some View {
         NavigationView {
-            VStack {
-                ScrollView {
-                    GradientRectangles(width: 250, height: 250)
-                    PathView(width: 250, height: 250)
-                    CurvesView(width: 250, height: 250)
-                    HeartView(width: 200, height: 200)
-                        .frame(width: UIScreen.main.bounds.width)
-                    MedalView(width: 200, height: 200)
-                        .frame(width: UIScreen.main.bounds.width)
+            CustomGridView(items: activeAwards, columns: 2) { sideSize, item in
+                VStack {
+                    item.view
+                    Text(item.title)
                 }
+                .padding()
+                .frame(width: sideSize, height: sideSize)
             }
-            .navigationBarTitle("Awards")
+            .navigationBarTitle("Awards count: \(activeAwards.count)")
         }
     }
 }
